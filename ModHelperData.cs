@@ -8,5 +8,5 @@
         public const string Description = "Adds Star Wars to BTD6! Currently working on putting in 3D Models of Anakin!";
         public const string RepoOwner = "anakinskywalker066";
         public const string RepoName = "StarWarsMod";
-        public const string Icon = "Anakin.png";
+        public const string Icon = "Star wars.png";
     }
