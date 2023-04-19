@@ -7,7 +7,7 @@ public class StarWars : BloonsTD6Mod
 {
     public override void OnApplicationStart() 
     {
-    ModHelper.Msg<StarWars>("starwars has loaded fully");
+    ModHelper.Msg<StarWars>("Star Wars has loaded fully");
     }
 }
     
