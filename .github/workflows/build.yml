@@ -8,7 +8,7 @@ on:
       - '*'
 
 env:
-  PROJECT_NAME: SkywalkerMod
+  PROJECT_NAME: StarWarsMod
   MELONLOADER_BRANCH: alpha-development
   
   MOD_HELPER_NAME: Btd6ModHelper
