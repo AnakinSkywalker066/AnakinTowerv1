@@ -15,15 +15,5 @@ global using BTD_Mod_Helper;
 global using BTD_Mod_Helper.Api.Towers;
 global using BTD_Mod_Helper.Extensions;
 global using BTD_Mod_Helper.Api.Display;
-global using UnityEngine;
-global using Il2CppInterop.Runtime.InteropTypes.Arrays;
-global using Il2CppAssets.Scripts.Models;
-global using System;
-global using Il2CppInterop.Runtime;
-global using uObject = UnityEngine.Object;
-global using HarmonyLib;
-global using Il2CppAssets.Scripts.Utils;
-global using UnityEngine.AddressableAssets;
-global using UnityEngine.ResourceManagement;
 
 namespace starwarsmod;
