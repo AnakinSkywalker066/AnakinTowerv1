@@ -19,6 +19,9 @@
 		<DebugType>none</DebugType>
 	</PropertyGroup>
 	<Import Project="..\btd6.targets" />
+	<ItemGroup>
+	  <None Remove="Star.png" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="ApprovalUtilities" Version="5.8.0" />
