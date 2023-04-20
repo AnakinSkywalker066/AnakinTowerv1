@@ -17,6 +17,7 @@ public class Top1 : ModUpgrade<Jedi>
         towerModel.GetAttackModel().AddBehavior(new TargetStrongPrioCamoModel("StrongPrioCamo", true, false));
         towerModel.towerSelectionMenuThemeId = "Camo";
         towerModel.range += 5;
+        
     }
     public override string Icon => "TopUpgrade";
     public override string Portrait => "Anakin";

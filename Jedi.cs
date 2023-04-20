@@ -2,6 +2,14 @@
 
 public class Jedi : ModTower
 {
+    
+    public static void JediTower(UnityDisplayNode node, string PrefabName, BloonsTD6Mod mod)
+    {
+        GetBundle<StarWars>("btdanakin");
+        get
+        
+    }
+
     public override bool IsValidCrosspath(int[] tiers) =>
     ModHelper.HasMod("UltimateCrosspathing") || base.IsValidCrosspath(tiers);
     public override string Name => "AnakinSkywalker";
@@ -11,6 +19,8 @@ public class Jedi : ModTower
     public override int TopPathUpgrades => 5;
     public override int MiddlePathUpgrades => 0;
     public override int BottomPathUpgrades => 0;
+    
+
     public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
     {
         return towerSet.First(model => model.towerId == TowerType.GlueGunner).towerIndex + 1;
@@ -19,13 +29,15 @@ public class Jedi : ModTower
     public override string Description => "Uses Jedi Training to pop Bloons";
     public override string Icon => "Anakin";
     public override string Portrait => "Anakin";
+    
 
     public override void ModifyBaseTowerModel(TowerModel towerModel)
     {
-        towerModel.GetBehavior<DisplayModel>().scale = towerModel.GetBehavior<DisplayModel>().scale * 0.6f;
+        towerModel.ApplyDisplay<JediDisplay>();
         towerModel.GetAttackModel().weapons[0].projectile = Game.instance.model.GetTower(TowerType.BoomerangMonkey).GetAttackModel().weapons[0].projectile.Duplicate();
         towerModel.GetAttackModel().weapons[0].projectile.ApplyDisplay<Lightsaber>();
         towerModel.GetAttackModel().weapons[0].projectile.pierce = 100;
+        
     }
-    
+
 }
