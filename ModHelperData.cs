@@ -9,4 +9,6 @@
         public const string RepoOwner = "AnakinSkywalker066";
         public const string RepoName = "StarWarsMod";
         public const string Icon = "Star.png";
+        public const string DllName = "StarWarsMod.dll";
+        public const string Author = "DrVarsity";
     }
