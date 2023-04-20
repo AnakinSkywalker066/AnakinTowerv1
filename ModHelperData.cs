@@ -9,7 +9,7 @@ public static class ModHelperData
 
     public const string RepoOwner = "AnakinSkywalker066";
     public const string RepoName = "StarWarsMod";
+    public const string Icon = "Icon.png";
 
-    public const string SubPath = "StarWarsMod";
-    public const string DllName = "StarWarsMod.dll";
+    public const string WorksOnVersion = "34.3";
 }

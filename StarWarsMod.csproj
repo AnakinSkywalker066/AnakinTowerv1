@@ -20,7 +20,7 @@
 	</PropertyGroup>
 	<Import Project="..\btd6.targets" />
 	<ItemGroup>
-	  <None Remove="logo.png" />
+	  <None Remove="Icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
