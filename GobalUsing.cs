@@ -17,7 +17,10 @@ global using BTD_Mod_Helper.Extensions;
 global using BTD_Mod_Helper.Api.Display;
 global using UnityEngine;
 global using System;
-global using Il2CppInterop.Runtime;
+global using System.Reflection;
 global using Il2CppAssets.Scripts.Utils;
-
+global using Il2CppAssets.Scripts.Models.GenericBehaviors;
+global using HarmonyLib;
+global using UnityEngine.UI;
+global using Il2CppInterop.Runtime;
 namespace starwarsmod;

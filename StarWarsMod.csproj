@@ -20,10 +20,27 @@
 	</PropertyGroup>
 	<Import Project="..\btd6.targets" />
 	<ItemGroup>
+	  <None Remove="AssetBundles\anakin.bundle.manifest" />
+	  <None Remove="AssetBundles\Anakin.prefab" />
+	  <None Remove="AssetBundles\AssetBundles" />
+	  <None Remove="AssetBundles\AssetBundles.manifest" />
+	  <None Remove="AssetBundles\clone.bundle.manifest" />
+	  <None Remove="AssetBundles\CloneTrooper.prefab" />
 	  <None Remove="Icon.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="AssetBundles\anakin.bundle.manifest" />
+	  <EmbeddedResource Include="AssetBundles\AssetBundles" />
+	  <EmbeddedResource Include="AssetBundles\AssetBundles.manifest" />
+	  <EmbeddedResource Include="AssetBundles\clone.bundle.manifest" />
+	  <EmbeddedResource Include="AssetBundles\CloneTrooper.prefab" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="ApprovalUtilities" Version="5.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="AssetBundles\Anakin.prefab" />
 	</ItemGroup>
 </Project>

@@ -5,11 +5,8 @@ namespace starwarsmod;
 public class StarWars : BloonsTD6Mod
 {
     public override void OnApplicationStart() 
-    {
-    ModHelper.Msg<StarWars>("Star Wars has loaded fully");
+    {       
+        ModHelper.Msg<StarWars>("Star Wars has loaded fully");
     }
     
 }
-
-
-

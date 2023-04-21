@@ -12,7 +12,7 @@
         {
             towerModel.range += 10;
             foreach (var weaponModel in towerModel.GetWeapons())
-            {
+        {
                 weaponModel.projectile.GetDamageModel().damage += 5;
                 weaponModel.projectile.AddBehavior(new DamageModifierForTagModel("Moab", "Moab", 1, 55, false, true));
                 weaponModel.projectile.AddBehavior(new DamageModifierForTagModel("Bfb", "Bfb", 1, 80, false, true));
