@@ -15,7 +15,7 @@ namespace starwarsmod
     public abstract class JediKnightDisplay : BTD_Mod_Helper.Api.Display.ModTowerCustomDisplay
      
     { 
-        public static UnityEngine.Object LoadAsset<T>(string Asset, AssetBundle Bundle)
+        public static UnityEngine.Object? LoadAsset<T>(string Asset, AssetBundle Bundle)
         {
             try
             {
@@ -43,7 +43,6 @@ namespace starwarsmod
             }
         }
         public override string AssetBundleName { get; }
-        public override bool LoadAsync { get; }
         public override string MaterialName { get; }
         public override string PrefabName { get; }
         public static BTD_Mod_Helper.Api.Towers.ModTower tower { get; }
@@ -57,7 +56,7 @@ namespace starwarsmod
             node.transform.GetChild(0).transform.localRotation = Quaternion.Euler(0, 0, 0);
             node.transform.GetChild(0).transform.localPosition = Vector3.zero;
             node.transform.GetChild(0).transform.localPosition -= new Vector3(0, 0, 0);
-            node.gameObject.SetActive(true);
+            
         }
     }
 }
