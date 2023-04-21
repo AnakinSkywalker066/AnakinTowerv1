@@ -1,4 +1,9 @@
-﻿namespace starwarsmod.TopPath;
+﻿using BTD_Mod_Helper.Api.Towers;
+using BTD_Mod_Helper.Extensions;
+using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+
+namespace starwarsmod.TopPath;
 
 public class Top4 : ModUpgrade<Jedi>
     {
@@ -22,5 +27,5 @@ public class Top4 : ModUpgrade<Jedi>
             }
         }
         public override string Icon => "TopUpgrade";
-        public override string Portrait => "Anakin";
+        public override string Portrait => "2DAnakin";
     }
