@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1018950101
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: jediresource.bundle
+      Dependencies: {}
