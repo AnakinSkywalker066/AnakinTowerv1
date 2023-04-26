@@ -1,7 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Display;
 using Il2CppAssets.Scripts.Unity.Display;
 
-namespace starwarsmod
+namespace StarWarsMod
 {
     public class Lightsaber : ModDisplay
     {

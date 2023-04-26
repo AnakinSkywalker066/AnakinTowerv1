@@ -1,4 +1,4 @@
-﻿namespace starwarsmod;
+﻿namespace StarWarsMod;
 
 public static class ModHelperData
 {
