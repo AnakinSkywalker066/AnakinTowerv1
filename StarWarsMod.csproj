@@ -23,13 +23,13 @@
 	<Import Project="..\btd6.targets" />
 	
 	<ItemGroup>
-	  <None Remove="Assets\skywalker.bundle" />
-	  <None Remove="Bundles\skywalker.bundle" />
+	  <None Remove="Assets\AnakinSkywalker.bundle" />
 	  <None Remove="Icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="ApprovalUtilities" Version="5.8.0" />
+	  <PackageReference Include="System.Collections" Version="4.3.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -37,21 +37,9 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	    <LastGenOutput>Models.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
-	  <EmbeddedResource Update="StarWarsModels.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>StarWarsModels.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="resources.dll" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Update="StarWarsModels.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>StarWarsModels.resx</DependentUpon>
-	  </Compile>
 	</ItemGroup>
 </Project>
