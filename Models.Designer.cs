@@ -63,39 +63,9 @@ namespace starwarsmod {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] assetBundles {
+        internal static byte[] skywalker {
             get {
-                object obj = ResourceManager.GetObject("assetBundles", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] assetBundles1 {
-            get {
-                object obj = ResourceManager.GetObject("assetBundles1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] jediresource {
-            get {
-                object obj = ResourceManager.GetObject("jediresource", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] jediresource_bundle {
-            get {
-                object obj = ResourceManager.GetObject("jediresource_bundle", resourceCulture);
+                object obj = ResourceManager.GetObject("skywalker", resourceCulture);
                 return ((byte[])(obj));
             }
         }

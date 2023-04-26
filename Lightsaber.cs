@@ -1,6 +1,5 @@
 ﻿using BTD_Mod_Helper.Api.Display;
 using Il2CppAssets.Scripts.Unity.Display;
-using starwarsmod;
 
 namespace starwarsmod
 {

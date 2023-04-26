@@ -24,7 +24,7 @@
 	
 	<ItemGroup>
 	  <None Remove="Assets\skywalker.bundle" />
-	  <None Remove="Bundles\jediresource.bundle" />
+	  <None Remove="Bundles\skywalker.bundle" />
 	  <None Remove="Icon.png" />
 	</ItemGroup>
 

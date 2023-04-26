@@ -118,16 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="assetBundles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bundles\assetbundles;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="assetBundles1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bundles\assetbundles.manifest;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="jediresource" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bundles\jediresource.bundle;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="jediresource_bundle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>bundles\jediresource.bundle.manifest;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="skywalker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bundles\skywalker.bundle;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
