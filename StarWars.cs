@@ -112,7 +112,7 @@ public class StarWars : MelonMod
         {
             foreach (KeyValuePair<string, StarWarsTower> tower in TowerTypes)
             {
-                tower.Value.LoadedBundle = UnityEngine.AssetBundle.LoadFromFileAsync(LoaderPath + tower.Key.ToLower()).assetBundle;
+                tower.Value.LoadedBundle = AssetBundle.LoadFromFileAsync(LoaderPath + tower.Key.ToLower()).assetBundle;
             }
             try
             {
