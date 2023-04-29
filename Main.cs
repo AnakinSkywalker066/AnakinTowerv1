@@ -14,6 +14,7 @@ using Il2CppAssets.Scripts.Models.TowerSets;
 using System;
 using Il2CppMicrosoft.CodeAnalysis;
 using uObject = UnityEngine.GameObject;
+using UnityEngine.UIElements;
 
 [assembly: MelonInfo(typeof(StarWarsMod.Main), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -29,7 +30,8 @@ public class Main : BloonsTD6Mod
         foreach (var asset in MelonAssembly.Assembly.GetManifestResourceNames())
             MelonLogger.Msg(asset);
         //previous two lines are for debugging/finding names of assets
-        assetbundle = AssetBundle.LoadFromMemory(ExtractResource("bundlecube"));
+        assetbundle = AssetBundle.LoadFromMemory(ExtractResource("sky"));
+        var Asset = assetbundle.LoadAsset("Anakin");
 
         ModHelper.Msg<Main>("FallGuys loaded!");
     }
@@ -45,25 +47,25 @@ public class Main : BloonsTD6Mod
 
     public class FallGuysTower : ModTower
     {
-        public override TowerSet TowerSet => TowerSet.Primary;
-        public override string BaseTower => TowerType.DartMonkey;
-        public override string DisplayName => "FallGuysTower";
+        public override TowerSet TowerSet => TowerSet.Military;
+        public override string BaseTower => TowerType.BoomerangMonkey;
+        public override string DisplayName => "Anakin Skywalker";
         public override int Cost => 500;
         public override int TopPathUpgrades => 0;
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
-        public override string Portrait => "Cuphead-Icon";
-        public override string Icon => "Cuphead-Icon";
+        public override string Portrait => "2DAnakin";
+        public override string Icon => "2DAnakin";
         public override bool DontAddToShop => false;
-        public override string Description => "Cuphead is here";
+        public override string Description => "Younglins Beware of This Man!";
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            towerModel.display = new() { guidRef = "SimplePrefab-Prefab" }; //required for custom displays to be recognized
-            towerModel.GetBehavior<DisplayModel>().display = new() { guidRef = "SimplePrefab-Prefab" }; //required for custom displays to be recognized
+            towerModel.display = new() { guidRef = "Anakin-Prefab" }; //required for custom displays to be recognized
+            towerModel.GetBehavior<DisplayModel>().display = new() { guidRef = "Anakin-Prefab" }; //required for custom displays to be recognized
             towerModel.GetBehavior<DisplayModel>().scale = towerModel.GetBehavior<DisplayModel>().scale * 5f;
             var proj = towerModel.GetAttackModel().weapons[0].projectile;
-
+            towerModel.displayScale = 25f;
 
         }
 
@@ -79,8 +81,8 @@ public class Main : BloonsTD6Mod
 
                 switch (__instance.objectId.guidRef) // makes sure to support loading more than one custom display
                 {
-                    case "SimplePrefab-Prefab":
-                        gObj = UnityEngine.Object.Instantiate(assetbundle.LoadAsset("SimplePrefab").Cast<uObject>(), __instance.__4__this.DisplayRoot); //load the asset from the asset bundle and instantiates/creates it
+                    case "Anakin-Prefab":
+                        gObj = uObject.Instantiate(assetbundle.LoadAsset("Anakin").Cast<uObject>(), __instance.__4__this.DisplayRoot); //load the asset from the asset bundle and instantiates/creates it
                         break;
                     default:
                         return true; //if the display is not custom, let the game create the base display
@@ -88,7 +90,6 @@ public class Main : BloonsTD6Mod
 
                 gObj.name = __instance.objectId.guidRef; //should be optional in theory, but i left it because its good for debugging/organization
                 gObj.transform.position = new Vector3(Factory.kOffscreenPosition.x, 0, 0); //move the object offscreen so the game doesn't try to render it when its not needed 
-
                 gObj.AddComponent<UnityDisplayNode>(); //adds a UnityDisplayNode component to the object, this is needed for the game to recognize it as a display
                 prototype = gObj.GetComponent<UnityDisplayNode>(); //gets the UnityDisplayNode component from the object
                 __instance.__4__this.active.Add(prototype); //adds the object to the active list, this is needed for the game to show the display
