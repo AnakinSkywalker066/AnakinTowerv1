@@ -1,0 +1,45 @@
+ManifestFileVersion: 0
+CRC: 815983356
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d6faeb038876a5f8c3aeb98136734a66
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ca7266e7f5316ef3a91d1d831b76e853
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e1631b3947e7a7846832aec978c0585b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Jedi.prefab
+Dependencies: []
