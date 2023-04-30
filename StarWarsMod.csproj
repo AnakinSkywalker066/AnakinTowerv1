@@ -26,6 +26,8 @@
 	  
 	  <None Remove="Assets\Clonewars.png" />
 	  
+	  <None Remove="Assets\image.png" />
+	  
 	  <None Remove="Assets\sky" />
 	  
 	  <None Remove="Assets\Top1.png" />
