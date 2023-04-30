@@ -5,8 +5,9 @@
 
 <h1 align="center">Star Wars</h1>
 
-ANAKIN IS HERE!!!!!!!
+### ANAKIN IS HERE!!!!!!!
 <img alt="Screenshot" height="400" src="Assets/image.png"/>
+
 - Adds Anakin Skywalker to BTD6!
 
 - Only Top Path Available Right Now...
