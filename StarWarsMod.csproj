@@ -28,8 +28,6 @@
 	  
 	  <None Remove="Assets\image.png" />
 	  
-	  <None Remove="Assets\sky" />
-	  
 	  <None Remove="Assets\Top1.png" />
 	  
 	  <None Remove="Assets\top2.png" />
@@ -39,10 +37,6 @@
 	  <None Remove="Assets\Top5.png" />
 	  
 	  <None Remove="Icon.png" />
-	</ItemGroup>
-	
-	<ItemGroup>
-	  <EmbeddedResource Include="Assets\sky" />
 	</ItemGroup>
 
 	<ItemGroup>
