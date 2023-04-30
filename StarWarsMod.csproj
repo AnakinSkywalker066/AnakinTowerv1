@@ -23,18 +23,28 @@
 	<Import Project="..\btd6.targets" />
 	
 	<ItemGroup>
-	  <None Remove="Assets\AnakinSkywalker.bundle" />
+	  
+	  <None Remove="Assets\Clonewars.png" />
+	  
 	  <None Remove="Assets\sky" />
-	  <None Remove="bundlecube" />
+	  
+	  <None Remove="Assets\Top1.png" />
+	  
+	  <None Remove="Assets\top2.png" />
+	  
+	  <None Remove="Assets\top4.png" />
+	  
+	  <None Remove="Assets\Top5.png" />
+	  
 	  <None Remove="Icon.png" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <EmbeddedResource Include="Assets\sky" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="ApprovalUtilities" Version="5.8.0" />
 	  <PackageReference Include="System.Collections" Version="4.3.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="Assets\sky" />
 	</ItemGroup>
 </Project>
