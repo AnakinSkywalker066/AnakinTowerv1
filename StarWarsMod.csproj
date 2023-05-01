@@ -24,9 +24,15 @@
 	
 	<ItemGroup>
 	  
+	  <None Remove="Assets\act.wav" />
+	  
 	  <None Remove="Assets\Clonewars.png" />
 	  
+	  <None Remove="Assets\fun.wav" />
+	  
 	  <None Remove="Assets\image.png" />
+	  
+	  <None Remove="Assets\PowerDouble.wav" />
 	  
 	  <None Remove="Assets\Top1.png" />
 	  
@@ -42,5 +48,9 @@
 	<ItemGroup>
 	  <PackageReference Include="ApprovalUtilities" Version="5.8.0" />
 	  <PackageReference Include="System.Collections" Version="4.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="BottomPath\" />
 	</ItemGroup>
 </Project>
