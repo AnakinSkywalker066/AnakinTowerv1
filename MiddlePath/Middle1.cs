@@ -14,10 +14,11 @@ namespace starwarsmod.MiddlePath
         public override int Tier => 1;
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.IncreaseRange(+5);
             foreach (var weaponModel in towerModel.GetWeapons())
             {
-                
-                }
+               
+            }
         }
     }
 }

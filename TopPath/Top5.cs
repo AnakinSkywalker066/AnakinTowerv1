@@ -17,7 +17,7 @@ namespace starwarsmod.TopPath
         public override void ApplyUpgrade(TowerModel towerModel)
         {
 
-
+            towerModel.IncreaseRange(+10);
             foreach (var weaponModel in towerModel.GetWeapons())
             {
 

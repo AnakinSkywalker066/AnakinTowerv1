@@ -1,6 +1,8 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using StarWarsMod;
 using static StarWarsMod.StarWars;
 
 namespace starwarsmod.TopPath
@@ -15,12 +17,13 @@ namespace starwarsmod.TopPath
         public override int Tier => 1;
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.IncreaseRange(+ 5);
             foreach (var weaponModel in towerModel.GetWeapons())
             {
                 weaponModel.Rate *= 0.75f;
                 weaponModel.animateOnMainAttack = true;
                 weaponModel.projectile.GetDamageModel().damage += 5;
-
+                
             }
         }
         public override string Icon => "Top1";

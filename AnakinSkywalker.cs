@@ -9,9 +9,9 @@ using starwarsmod.CustomDisplays;
 using System.Collections.Generic;
 using System.Linq;
 using BTD_Mod_Helper.Extensions;
-using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using BTD_Mod_Helper.Api;
 using StarWarsMod;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 
 namespace starwarsmod
 {
@@ -31,12 +31,23 @@ namespace starwarsmod
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound2.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound3.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound4.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound5.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound6.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound7.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound8.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            ///^^^ Upgrade Click Sound
+            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound2.assetId = ModContent.CreateAudioSourceReference<StarWars>("fun");
             towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound1.assetId = ModContent.CreateAudioSourceReference<StarWars>("fun");
+            ///^^^ Tower Place Sound
             towerModel.GetAttackModel().weapons[0].projectile.GetDamageModel().immuneBloonProperties = (BloonProperties)1;
             towerModel.ApplyDisplay<AnakinSaber>();
             towerModel.GetDescendant<DamageModel>().immuneBloonProperties = 0;
             towerModel.GetBehavior<DisplayModel>().scale = towerModel.GetBehavior<DisplayModel>().scale * 1f;
-            //required for custom displays to be recognized
+            //Scale required for custom models to be recognized
             towerModel.displayScale = 30f;
             var proj = towerModel.GetAttackModel().weapons[0].projectile;
             proj.scale = 50f;

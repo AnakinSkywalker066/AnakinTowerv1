@@ -11,6 +11,7 @@ public class StarWars : BloonsTD6Mod
     public override void OnApplicationStart()
     {
         ModHelper.Msg<StarWars>("Star Wars Mod Has Fully Loaded");
+        ModHelper.Msg<StarWars>("This Mod Has Alot So it May Take A Second To Load.");
     }
     
 
