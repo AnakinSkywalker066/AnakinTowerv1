@@ -8,6 +8,8 @@
 ### ANAKIN IS HERE!!!!!!!
 <img alt="Screenshot" height="400" src="Assets/image.png"/>
 
+- Working on SoundFX and Animations! and ALL 3 PATHS!
+
 - Adds Anakin Skywalker to BTD6!
 
 - Only Top Path Available Right Now...
