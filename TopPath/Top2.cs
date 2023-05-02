@@ -1,6 +1,9 @@
-﻿using BTD_Mod_Helper.Api.Towers;
+﻿using BTD_Mod_Helper.Api;
+using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using StarWarsMod;
 using static StarWarsMod.StarWars;
 
 namespace starwarsmod.TopPath
@@ -15,6 +18,14 @@ namespace starwarsmod.TopPath
         public override int Tier => 2;
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound2.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound3.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound4.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound5.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound6.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound7.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
+            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound8.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
             foreach (var weaponModel in towerModel.GetWeapons())
             {
                 weaponModel.Rate *= 0.5f;
