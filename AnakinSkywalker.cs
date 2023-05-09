@@ -38,8 +38,7 @@ namespace starwarsmod
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound2.assetId = CreateAudioSourceReference<StarWars>("fun");
-            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound1.assetId = CreateAudioSourceReference<StarWars>("fun");
+           
             ///^^^ Tower Place Sound
             towerModel.GetAttackModel().weapons[0].projectile.GetDamageModel().immuneBloonProperties = (BloonProperties)1;
             towerModel.ApplyDisplay<AnakinSaber>();
