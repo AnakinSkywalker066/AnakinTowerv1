@@ -28,11 +28,11 @@
 	  
 	  <None Remove="Assets\Clonewars.png" />
 	  
+	  <None Remove="Assets\doublepower.wav" />
+	  
 	  <None Remove="Assets\fun.wav" />
 	  
 	  <None Remove="Assets\image.png" />
-	  
-	  <None Remove="Assets\PowerDouble.wav" />
 	  
 	  <None Remove="Assets\Top1.png" />
 	  
@@ -41,6 +41,8 @@
 	  <None Remove="Assets\top4.png" />
 	  
 	  <None Remove="Assets\Top5.png" />
+	  
+	  <None Remove="Assets\xwing.bundle" />
 	  
 	  <None Remove="Icon.png" />
 	</ItemGroup>

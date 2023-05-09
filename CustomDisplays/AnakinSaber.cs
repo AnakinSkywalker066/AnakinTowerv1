@@ -5,6 +5,6 @@ namespace starwarsmod.CustomDisplays
     public class AnakinSaber : ModCustomDisplay
     {
         public override string AssetBundleName => "sky";
-        public override string PrefabName => "AnakinSaber";
+        public override string PrefabName => "Anakin";
     }
 }

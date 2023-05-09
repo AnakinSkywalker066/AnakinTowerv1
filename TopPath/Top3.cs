@@ -3,6 +3,9 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers;
 using static StarWarsMod.StarWars;
 using BTD_Mod_Helper.Extensions;
+using BTD_Mod_Helper.Api;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using StarWarsMod;
 
 namespace starwarsmod.TopPath
 {
@@ -16,6 +19,8 @@ namespace starwarsmod.TopPath
         public override int Tier => 3;
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            
+            
             towerModel.IncreaseRange(+5);
             foreach (var weaponModel in towerModel.GetWeapons())
             {

@@ -12,6 +12,11 @@ using BTD_Mod_Helper.Extensions;
 using BTD_Mod_Helper.Api;
 using StarWarsMod;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors;
+using Il2CppAssets.Scripts.Unity.TowerSets;
+using Il2CppAssets.Scripts.Models;
+using Il2CppAssets.Scripts.Models.Audio;
+using UnityEngine;
+using Il2CppAssets.Scripts.Utils;
 
 namespace starwarsmod
 {
@@ -27,21 +32,14 @@ namespace starwarsmod
         public override string Icon => "2DAnakin";
         public override bool DontAddToShop => false;
         public override string Description => "Younglins Beware of This Man!";
+
         
+        
+
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound2.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound3.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound4.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound5.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound6.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound7.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            towerModel.GetBehavior<CreateSoundOnUpgradeModel>().sound8.assetId = ModContent.CreateAudioSourceReference<StarWars>("act");
-            ///^^^ Upgrade Click Sound
-            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound2.assetId = ModContent.CreateAudioSourceReference<StarWars>("fun");
-            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound1.assetId = ModContent.CreateAudioSourceReference<StarWars>("fun");
+            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound2.assetId = CreateAudioSourceReference<StarWars>("fun");
+            towerModel.GetBehavior<CreateSoundOnTowerPlaceModel>().sound1.assetId = CreateAudioSourceReference<StarWars>("fun");
             ///^^^ Tower Place Sound
             towerModel.GetAttackModel().weapons[0].projectile.GetDamageModel().immuneBloonProperties = (BloonProperties)1;
             towerModel.ApplyDisplay<AnakinSaber>();
@@ -49,18 +47,18 @@ namespace starwarsmod
             towerModel.GetBehavior<DisplayModel>().scale = towerModel.GetBehavior<DisplayModel>().scale * 1f;
             //Scale required for custom models to be recognized
             towerModel.displayScale = 30f;
-            var proj = towerModel.GetAttackModel().weapons[0].projectile;
-            proj.scale = 50f;
-            proj.ApplyDisplay<Lightsaber>();
+            
             
             foreach (var weaponModel in towerModel.GetWeapons())
             {
-                weaponModel.animateOnMainAttack = true;
-                weaponModel.projectile.pierce = 100000;
-                var projectileModel = weaponModel.projectile;
-                projectileModel.GetDamageModel().immuneBloonProperties = BloonProperties.None;
+                weaponModel.Rate = 0.5f;
+                weaponModel.projectile.pierce = 10;
+                weaponModel.projectile.GetDamageModel().damage = 1;
+                weaponModel.projectile.scale = 10f;
+                weaponModel.projectile.display = new PrefabReference() { guidRef = "6b874567d3b27004ab1b06ad85b0bf36" };
+
             }
-            
+
 
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)

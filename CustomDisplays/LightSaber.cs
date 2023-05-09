@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace starwarsmod.CustomDisplays
 {
-    public class Lightsaber : ModCustomDisplay
+    public class LightSaber : ModCustomDisplay
     {
         public override string AssetBundleName => "sky";
         public override string PrefabName => "lightsaber";
