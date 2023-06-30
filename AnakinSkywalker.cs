@@ -1,22 +1,15 @@
-﻿using BTD_Mod_Helper.Api.Towers;
-using BTD_Mod_Helper;
+﻿using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.Towers;
+using BTD_Mod_Helper.Extensions;
 using Il2Cpp;
 using Il2CppAssets.Scripts.Models.GenericBehaviors;
-using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Models.TowerSets;
+using Il2CppAssets.Scripts.Utils;
 using starwarsmod.CustomDisplays;
 using System.Collections.Generic;
 using System.Linq;
-using BTD_Mod_Helper.Extensions;
-using BTD_Mod_Helper.Api;
-using StarWarsMod;
-using Il2CppAssets.Scripts.Models.Towers.Behaviors;
-using Il2CppAssets.Scripts.Unity.TowerSets;
-using Il2CppAssets.Scripts.Models;
-using Il2CppAssets.Scripts.Models.Audio;
-using UnityEngine;
-using Il2CppAssets.Scripts.Utils;
 
 namespace starwarsmod
 {

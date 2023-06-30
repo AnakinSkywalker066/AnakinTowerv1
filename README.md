@@ -1,10 +1,10 @@
-<a href="https://github.com/AnakinSkywalker066/StarWarsMod/releases/download/newest/StarWarsMod.dll">
+<a href="https://github.com/AnakinBackup/AnakinTowerv1/releases/download/1/StarWarsMod.dll">
     <img align="left" alt="Icon" height="90" src="Icon.png">
     <img align="right" alt="Download" height="75" src="https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/BloonsTD6%20Mod%20Helper/Resources/DownloadBtn.png">
 </a>
 
 <h1 align="center">Star Wars</h1>
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/AnakinBackup/StarWarsMod/total?label=Total%20Dowloads">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/AnakinBackup/AnakinTowerv1/total?label=Total%20Dowloads">
 
 ### ANAKIN IS HERE!!!!!!!
 <img alt="Screenshot" height="400" src="Assets/image.png"/>
