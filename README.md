@@ -4,7 +4,7 @@
 </a>
 
 <h1 align="center">Star Wars</h1>
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/AnakinSkywalker066/StarWarsMod/total?label=Total%20Dowloads">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/AnakinBackup/StarWarsMod/total?label=Total%20Dowloads">
 
 ### ANAKIN IS HERE!!!!!!!
 <img alt="Screenshot" height="400" src="Assets/image.png"/>
