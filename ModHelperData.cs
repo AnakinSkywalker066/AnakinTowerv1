@@ -11,7 +11,7 @@ public static class ModHelperData
         "### Thanks to everyone on the 1330 Studios Discord server who helped me make this mod." +
         "### This is the first Mod I Made!!!";
 
-    public const string RepoOwner = "AnakinBackup";
+    public const string RepoOwner = "AnakinSkywalker066";
     public const string RepoName = "AnakinTowerv1";
     public const string Icon = "Icon.png";
 
